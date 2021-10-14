@@ -1,0 +1,104 @@
+www.w3schools.com
+
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+CSS Syntax
+selector {property: value;}
+p is a selector in CSS (it points to the HTML element you want to style: <p>).
+color is a property, and red is the property value
+text-align is a property, and center is the property value
+
+CSS [attribute="value"] Selector
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+<style>
+The CSS element Selector
+p, h6 {
+  text-align: center;
+  color: red;
+}
+The CSS id Selector
+#id_name {
+}
+The CSS class Selector
+.class_name {
+
+}
+The CSS class with element Selector
+p.class_name {
+
+}
+The CSS Universal Selector
+* {
+
+}
+</style>
+
+The CSS element Selector
+<p>
+The CSS id Selector
+<p id="id_name">
+The CSS class Selector
+<p class="class_name">
+
+Comments
+/* Set text color to red */
+<!-- These paragraphs will be red -->
+
+CSS Backgrounds
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+
+shorthand
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+shorthand
+p {
+  border: 5px solid red;
+}
+
+CSS Margins
+The CSS margin properties are used to create space around elements, outside of any defined borders
+
+CSS Padding
+Padding is used to create space around an element's content, inside of any defined borders.
+
+The CSS Box Model
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+The four links states are:
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+All CSS Combinator Selectors
+Selector	Example	Example description
+element element	div p	Selects all <p> elements inside <div> elements
+element>element	div > p	Selects all <p> elements where the parent is a <div> element
+element+element	div + p	Selects the first <p> element that are placed immediately after <div> elements
+element1~element2	p ~ ul	Selects every <ul> element that are preceded by a <p> element
+

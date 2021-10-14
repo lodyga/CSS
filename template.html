@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p.one {
+    border-style: double dashed groove dotted;
+    border-color: red green blue yellow;
+}
+p.two {
+    border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-color: red green blue yellow;
+    border-style: double dashed groove dotted;
+}
+p.three {
+    border: 1px solid green;
+    margin: 70px;
+}
+div.one {
+    border: 1px solid green;
+    width: 300px;
+    margin: auto;
+}
+div.two {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: black;
+}
+div.three {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+  color: black;
+}
+div.four {
+  height: 40px;
+  max-width: 25%;
+  border: 1px solid #4CAF50;
+}
+div.five {
+  background-color: lightgrey;
+  width: 300px;
+  padding: 50px;
+  border: 15px solid green;
+  margin: 20px;
+  outline: #4CAF50 dashed 10px;
+  outline-offset: 15px;
+  text-align: justify;
+  color: black;
+}
+
+img.a {
+  vertical-align: baseline;
+}
+
+p.small {
+    line-height: 0.7;
+    word-spacing: 10px;
+    text-shadow: 2px 2px 5px red;
+}
+
+ul {
+    list-style-image: url("img/sqpurple.gif");
+}
+li.one {
+  display: inline;
+}
+
+div.div1 {
+  background: red;
+  float: left;
+  padding: 15px; 
+}
+
+div.div2 {
+  background: yellow;
+  float: left;
+  padding: 15px; 
+}
+
+div.div3 {
+  background: green;
+  float: left;
+  padding: 15px; 
+}
+
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;  
+  background-color: yellow; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+.right_1 {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.right_2 {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+div.over  {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div.over:hover {
+  background-color: blue;
+  text-align: left;
+  color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+</style>
+</head>
+<body>
+
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<div class="one">Some text.</div>
+<div class="two">Some text.</div>
+<div class="three">Width + padding</div>
+<div class="four">Height + width</div>
+<div class="five">padding + border + margin + outline</div>
+<br>
+<p>An <img class="a" src="img/sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+  
+<p class="small">
+  is a paragraph with a smaller line-height with larger word spacing.<br>
+  is a paragraph with a smaller line-height and word-spacing.<br>
+</p>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+
+<ul>
+    <li class="one"><a href="/html/default.asp" target="_blank">HTML</a></li>
+    <li class="one"><a href="/css/default.asp" target="_blank">CSS</a></li>
+    <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<div class="div3">Div 3</div>
+
+<br>
+<br>
+<br>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit 
+sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> 
+gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<div class="right_1">
+    <p>Right text with position</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="right_2">
+    <p>Right text with float</p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="over">Mouse Over Me</div>
+
+<div class="grid">
+  <div class="column">col_1</div>
+  <div class="column">col_2</div>
+  <div class="column">col_3</div>
+  <div class="column">col_4</div>
+</div>
+
+
+</body>
+</html>
+
+
